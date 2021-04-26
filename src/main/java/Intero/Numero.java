@@ -19,7 +19,7 @@ public class Numero {
      * @param n Numero da controllare
      * @return
      */
-    boolean getPari(int n){
+    boolean isPari(int n){
         return ( n % 2 == 0 );
     }
 
@@ -30,7 +30,7 @@ public class Numero {
      * @param m Multiplo
      * @return
      */
-    boolean getMultiplo(int n, int m){
+    boolean isMultiplo(int n, int m){
         return ( n % m == 0);
     }
 

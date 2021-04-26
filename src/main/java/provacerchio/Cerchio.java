@@ -42,4 +42,8 @@ public class Cerchio {
     public void setRaggio(double raggio){
         this.raggio = raggio;
     }
+
+    public double getRaggio() {
+        return raggio;
+    }
 }

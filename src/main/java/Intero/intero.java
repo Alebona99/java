@@ -25,7 +25,7 @@ public class intero {
         System.out.println("Il valore della posizione in Fibonacci :" + numero1.getFib(numero)); //Calcolo la successione Fibonacci
 
         //Controllo del numero se è pari o dispari
-        if ( numero1.getPari(numero) ){
+        if ( numero1.isPari(numero) ){
             System.out.println("Il numero è pari");
         }
         else {
@@ -33,7 +33,7 @@ public class intero {
         }
 
         //Controllo se il numero è multiplo o no del valore passato
-        if ( numero1.getMultiplo(numero, multiplo) ){
+        if ( numero1.isMultiplo(numero, multiplo) ){
             System.out.println( numero + " è multiplo di " + multiplo );
         }
         else{
