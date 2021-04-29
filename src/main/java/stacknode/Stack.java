@@ -37,12 +37,14 @@ public class Stack {
     /**
      * Metodo pop per eliminare il valore a cui punta head
      */
-    public void pop(){
+    public Node pop(){
         if(head != null){
+            Node copy = new Node(this.head);   //Uso il copy constuctor
             this.head = this.head.getPtr();
+            return copy;
         }
         else {
-            System.out.println("Stack vuoto");
+            return null;
         }
     }
 

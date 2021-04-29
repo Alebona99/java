@@ -5,10 +5,11 @@ public class Stack {
     private int size;
     private String[] elements;
     private static final int DEFAULT_SIZE = 20;
+    private static final int DEAFULT_INCREMENT = 5;
 
 
     /**
-     * Costruttore senza parametro che setta la capacità dello stack array a 30
+     * Costruttore senza parametro che setta la capacità dello stack array a 20
      */
     public Stack(){
         elements = new String[DEFAULT_SIZE];
@@ -34,7 +35,7 @@ public class Stack {
     public void push(String el){
 
         if ( isFull() ){
-            String[] temp = new String[elements.length +1];
+            String[] temp = new String[elements.length + DEAFULT_INCREMENT];
             System.arraycopy(elements, 0, temp, 0, elements.length);
             elements = temp;
         }
